@@ -1,0 +1,141 @@
+.table{
+
+  &__container {
+    position: fixed;
+    left: 181px;
+    top: 100px;
+    width: 608px;
+    height: 385px;
+    border: none;
+    border-radius: 5px;
+    border-spacing: 0;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 4px;
+    font-family: 'Helvetica Neue Medium', serif;
+
+
+    &__abonement {
+      background: #ffffff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      border-spacing: 0;
+      table-layout: auto;
+      color: #586370;
+      font-family: 'Helvetica Neue Medium', serif;
+      font-size: 13px;
+      text-indent:15px;
+
+      tr {
+        transition: 0.5s background;
+        cursor: pointer;
+      }
+
+      tr:nth-child(1) {
+        background: #53b7ff0d;
+        color: #7E9CB0;
+        cursor: default;
+      }
+
+      tr:nth-child(n):before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 15px;
+        width: 574px;
+        height: 1px;
+        background: #F0F0F0;
+      }
+
+      tr:hover {
+        background: #F0F0F0;
+      }
+
+      tr:nth-child(-n+2):before {
+        background: none;
+      }
+
+      td {
+        height: 40px;
+      }
+
+      .money {
+        color: #15C585;
+      }
+    }
+  }
+  &__container.short{
+    height: 329px;
+  }
+
+
+  &__container.small-info{
+    left: 387px;
+    top: 100px;
+    width: 398px;
+    height: 373px;
+  }
+
+  &__container.small-info.clients{
+    left: 426px;
+    top: 100px;
+    width: 359px;
+    height: 376px;
+  }
+
+
+
+
+  &__container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+
+  &__container.bg-none:before {
+    content: none;
+  }
+
+  &__container.scroll {
+    width: 614px;
+  }
+  &__container.small-info.scroll {
+    width: 398px;
+  }
+  &__container.small-info.clients.scroll {
+    width: 359px;
+  }
+
+
+
+
+  &__container::-webkit-scrollbar-track
+  {
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+
+  &__container::-webkit-scrollbar
+  {
+    border-radius: 5px;
+    width: 7px;
+    background-color: #ffffff;
+  }
+
+  &__container::-webkit-scrollbar-thumb
+  {
+    border-radius: 5px;
+    background-color: #5C4AFF;
+  }
+
+}

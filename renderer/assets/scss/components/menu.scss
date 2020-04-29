@@ -1,0 +1,122 @@
+.menu_bar {
+  &__container {
+    width: 166px;
+    height: 470px;
+    background: #2B2B35;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    color: white;
+    -webkit-user-select: none;
+
+
+    .tab {
+
+      position: fixed;
+
+      margin: 0;
+      top: 193px;
+
+      left: 16px;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      width: 150px;
+      height: 16px;
+      color: #9797A5;
+      transition: color 0.2s;
+
+      svg {
+        path {
+          fill: #9797A5;
+          transition: fill 0.2s;
+        }
+      }
+
+      p {
+        position: relative;
+        left: 33px;
+        top: -20px;
+        font-family: 'Helvetica Neue Medium', serif;
+        font-size: 14px;
+      }
+    }
+
+
+
+    .tab:hover {
+      color: #d0d0d0;
+      svg {
+        path {
+          fill: #d0d0d0;
+        }
+      }
+    }
+
+    @for $i from 2 through 5 {
+      .tab:nth-of-type(#{$i}) {
+        top: calc(193px + (#{$i - 1} * 43px));
+      }
+    }
+
+    .tab.active {
+      color: #ffffff;
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+
+
+    .exit {
+      background: #DF4B55;
+      position: fixed;
+      outline: none;
+      left: 10px;
+      top: 445px;
+      width: 146px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      font-family: 'Helvetica Neue Medium', serif;
+      font-size: 14px;
+      transition: background-color 0.2s;
+      cursor: pointer;
+    }
+    .exit:hover {
+      background: #F24F59;
+    }
+
+
+    .display{
+      &__name{
+        position: fixed;
+        top: 115px;
+        width: 166px;
+        overflow: hidden;
+        height: 16px;
+        font-family: 'Helvetica Neue Medium', serif;
+        font-size: 16px;
+        text-align: center;
+        color: #E5E5E5;
+        -webkit-user-select: none;
+      }
+
+      &__userstatus{
+        position: fixed;
+        top: 136px;
+        width: 166px;
+        overflow: hidden;
+        height: 12px;
+        font-family: 'Helvetica Neue Medium', serif;
+        font-size: 12px;
+        text-align: center;
+        color: #8A8A9E;
+        -webkit-user-select: none;
+      }
+    }
+  }
+}

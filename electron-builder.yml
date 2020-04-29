@@ -1,0 +1,12 @@
+appId: sport.up
+productName: SportUP
+copyright: Copyright © 2020 Dudole
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null

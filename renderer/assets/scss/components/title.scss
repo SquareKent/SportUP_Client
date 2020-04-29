@@ -1,0 +1,43 @@
+.title_bar {
+  &dragble {
+    position: fixed;
+    width: 734px;
+    height: 30px;
+    background: transparent;
+    top: 0;
+    left: 0;
+  }
+
+
+  &__container{
+    color: #8A8A9E;
+    background: #ffffff;
+    width: 800px;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-user-select: none;
+  }
+
+  &__block{
+    position: fixed;
+    top: 5px;
+    left: 15px;
+    width: 770px;
+    height: 20px;
+
+
+    &__text{
+      position: fixed;
+      top: 7px;
+      left: 15px;
+      color: #8A8A9E;
+      font-family: 'Helvetica Neue Bold', serif;
+      font-size: 13px;
+    }
+  }
+
+}

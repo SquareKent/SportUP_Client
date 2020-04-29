@@ -1,0 +1,31 @@
+.input_file {
+  &__container {
+    position: fixed;
+    background: #E2E2E4;
+    color: #79899B;
+    width: 116px;
+    height: 80px;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue Roman', serif;
+    font-size: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+
+    svg {
+      position: absolute;
+      top: 16px;
+      left: 44px;
+    }
+
+    p {
+      position: absolute;
+      width: 100%;
+      top: 52px;
+      text-align: center;
+    }
+  }
+
+  &__container:hover {
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  }
+}

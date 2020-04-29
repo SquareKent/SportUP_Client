@@ -1,0 +1,135 @@
+.combobox__selector {
+  position: fixed;
+  background: #FEFBFB;
+  border: 1px #E5E5E5 solid;
+  border-radius: 5px;
+  font-family: 'Helvetica Neue Medium', serif;
+  font-size: 13px;
+  color: #7A899B;
+  z-index: 9999;
+  animation: open_combo 0.5s normal forwards ease-in-out;
+
+
+  .btn {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px #E5E5E5 solid;
+    border-radius: 0;
+    cursor: pointer;
+    .text {
+      text-indent:15px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .btn:last-child {
+    border-bottom: none;
+  }
+  .btn:hover {
+    background: #f0f0f0;
+  }
+
+
+
+
+  @keyframes open_combo {
+    from {
+      height: 0;
+      overflow-y: hidden;
+    }
+    100% {
+      height: 500px;
+      overflow-y: auto;
+    }
+  }
+}
+
+.combobox__component{
+  cursor: pointer;
+  position: fixed;
+  background: #FEFBFB;
+  border: 1px #E5E5E5 solid;
+  border-radius: 5px;
+  font-family: 'Helvetica Neue Medium', serif;
+  font-size: 13px;
+  color: #7A899B;
+  transition: box-shadow 0.5s;
+
+  .arrow {
+    position: absolute;
+    top: 7px;
+    left: calc(100% - 28px);
+    transition: 0.4s transform;
+  }
+
+  .arrow.up {
+    transform: rotate(-180deg);
+  }
+
+  .text {
+    text-indent:15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  svg {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+  }
+
+  .divide {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+    background-color: #E5E5E5;
+    width: 1px;
+    height: 20px;
+  }
+
+  .search {
+    outline: none;
+    position: absolute;
+    color: #7A899B;
+    caret-color: #C1CDDA;
+    width: 100%;
+    left: 0;
+    background: transparent;
+    border: none;
+    height: 100%;
+    text-indent:55px;
+
+
+
+    /*position: relative;
+    margin: 0;
+    width: 100%;
+    border: none;
+
+    cursor: pointer;
+    .text {
+      outline: none;
+      border: none;
+      height: 100%;
+      text-indent:15px;
+      position: absolute;
+      width: 100%;
+    }
+
+    svg {
+      position: absolute;
+      left: 15px;
+      top: 10px;
+    }*/
+  }
+}
+
+.combobox__component:hover,
+.combobox__component.shadow
+{
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}

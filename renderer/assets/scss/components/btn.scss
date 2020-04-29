@@ -1,0 +1,52 @@
+.btn {
+  &__add_element{
+    position: fixed;
+    left: 623px;
+    top: 45px;
+    width: 162px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(75,64,255);
+    background: linear-gradient(180deg, rgba(75,64,255,1) 0%, rgba(106,82,254,1) 100%);
+    font-family: 'Helvetica Neue Medium', serif;
+    font-size: 13px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+  }
+  &__add_element:hover{
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    background: #4737E3;
+  }
+
+  &__add_element.abonement1 {
+    position: fixed;
+    left: 623px;
+    top: 445px;
+  }
+
+  &__return {
+    position: fixed;
+    left: 623px;
+    top: 45px;
+    width: 162px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #7A899B;
+    font-family: 'Helvetica Neue Medium', serif;
+    font-size: 13px;
+    color: #ffffff;
+    transition: background-color 0.33s, box-shadow 0.33s;
+    cursor: pointer;
+  }
+  &__return:hover {
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    background: #68798D;
+  }
+
+
+}

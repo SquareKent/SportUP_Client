@@ -1,0 +1,37 @@
+.abonement {
+  &__dobavit {
+    top: 445px;
+  }
+
+  &__money_input {
+    outline: none;
+    position: fixed;
+    background: #FEFBFB;
+    border: 1px #E5E5E5 solid;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue Medium', serif;
+    font-size: 13px;
+    color: #7A899B;
+    top: 312px;
+    left: 196px;
+    width: 162px;
+    height: 40px;
+    text-indent:15px;
+    caret-color: #C1CDDA;
+    appearance: none;
+    transition: box-shadow 0.5s;
+  }
+
+  &__money_input::-webkit-outer-spin-button,
+  &__money_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &__money_input:hover,
+  &__money_input:focus
+  {
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  }
+
+}
